@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full px-36 my-8">
+      <div
+        class="flex flex-row gap-3 mb-4 border-2 border-black font-semibold rounded-none"
+      >
+        <button
+          class="bg-white text-black hover:bg-black hover:text-white rounded-none px-4 py-2"
+          id="getText"
+        >
+          Get Text
+        </button>
+        <button
+          class="bg-white text-black hover:bg-black hover:text-white rounded-none px-4 py-2"
+          id="getUsers"
+        >
+          Get Users
+        </button>
+        <button
+          class="bg-white text-black hover:bg-black hover:text-white rounded-none px-4 py-2"
+          id="getPosts"
+        >
+          Get Posts
+        </button>
+      </div>
+      <form class="flex flex-col gap-4" id="addPost">
+        <input
+          class="border-2 border-black rounded-none px-4 py-2"
+          type="text"
+          id="title"
+          placeholder="Input your title"
+          required
+        />
+        <textarea
+          class="border-2 border-black rounded-none px-4 py-2"
+          name="body"
+          id="body"
+          cols="30"
+          rows="10"
+          placeholder="Write a post body ..."
+          required
+        ></textarea>
+        <input
+          class="bg-white text-black border-2 border-black font-bold hover:bg-black hover:text-white rounded-none px-4 py-4 hover:cursor-pointer"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+      <div class="border-2 border-black my-4 px-4" id="output">
+        <h1 class="text-2xl font-semibold py-2">Posts</h1>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
